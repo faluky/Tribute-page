@@ -1,0 +1,105 @@
+/* general reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: sans-serif;
+    background: blanchedalmond;
+    color: aquamarine;
+    line-height: 1.6;
+}
+/* header */
+header {
+    background: lavenderblush;
+    color: darkcyan;
+   padding: 1rem;
+   text-align: center;
+}
+
+header nav {
+    margin-top: 0.5rem;
+}
+
+header nav a {
+    color: black;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* hero section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background: lightseagreen;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* card section */
+.card {
+    background: lightskyblue;
+    margin: 1rem auto ;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px lightslategray;
+}
+
+/* contact form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding:0.8rem ;
+    border: 1px solid cyan;
+    border-radius: 8px;
+}
+
+button {
+    background: burlywood;
+    color: cyan;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: gainsboro;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* responsive */
+@media (max-width: 768px ) {
+    .hero {
+        flex-direction: column;
+    }
+    iframe {
+        width: 100%;
+    }
+}
